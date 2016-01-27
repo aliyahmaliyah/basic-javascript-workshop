@@ -143,3 +143,13 @@ function findTruthy(array) {
 var myArray = [0,"0","happy",-14,9];
 findTruthy(myArray);
 
+//Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
+var arr = [2,24,12];
+var total=0;
+
+function sum(array) {
+    for(var i = 0; i < array.length; i++){ 
+        total += array[i]; }
+    return total;
+}
+sum(arr);
