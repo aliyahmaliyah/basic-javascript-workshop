@@ -19,6 +19,12 @@ lastLetter("Linguini likes avocados!");
 //Write a function that takes a string and a number, and returns the character 
 //at the position represented by the number. The indexing of number should start at 0. 
 function letterIndex(number, string) {
-    return (string.charAt(number-1))
+    return (string.charAt(number-1));
 }
-letterIndex (4, "Linguini likes avocados!")
+letterIndex (4, "Linguini likes avocados!");
+
+//Write a function that takes two numbers and adds them together. 
+function addNumber (number1, number2) {
+    return (number1 + number2);
+}
+addNumber(12, 31);
