@@ -114,3 +114,17 @@ function capitalize(string) {
     return result.join(" ");
 }
 capitalize("hEllo wOrld");
+
+//Write a function that takes an array and returns the largest number of the array.
+var myArray = [2,4,80,15,30];
+var largest = myArray[0];
+
+function bigNumber(myArray) {
+    for (var i=0; i < myArray.length; i++) {
+        if (myArray[i] > largest){
+            largest = myArray[i];
+        }
+    }
+            return largest;
+}
+bigNumber(myArray);
