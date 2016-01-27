@@ -68,3 +68,9 @@ function stringRepeat(string, number) {
 }
 
 stringRepeat("Linguini loves avocados!", 3);
+
+//Write a function that takes a string, and returns the reverse of that string.
+function bkwdString(string) {
+    return string.split("").reverse().join("");
+}
+bkwdString("aliyah");
