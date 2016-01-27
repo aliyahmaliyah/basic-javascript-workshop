@@ -84,3 +84,19 @@ function factorial(number) {
     return j;
 }
 factorial(5);
+
+//Write a function that takes a phrase as a string, and returns the longest word 
+//in that phrase. If the phrase contains more than one such word, return the first occurrence.
+function longestWord(string) {
+    var newString = string.split(" ");
+    var length = 0;
+    var word = null;
+    for (var i = 0; i <= newString.length-1; i++){
+        if (length < newString[i].length) {
+            length = newString[i].length;
+            word = newString[i];
+        }
+    }
+    return word;
+}
+longestWord("Linguini loves avocados");
