@@ -153,3 +153,23 @@ function sum(array) {
     return total;
 }
 sum(arr);
+
+//Write a function that takes two arrays, and returns an array of all elements that are only in one array.
+var myArray = [2,4,6,8]
+var yourArray = [4,6,8,12]
+function newArray(array1, array2) {
+    var combined = [];
+    for (var i=0; i < array1.length; i++) {
+        
+        if (array2.indexOf(array1[i]) === -1) {
+            combined.push(array1[i]);
+        }
+    }
+    for (var j=0; j < array2.length; j++) {
+        if (array1.indexOf(array2[j]) === -1) {
+            combined.push(array2[j]);
+        }
+    }
+    return combined;
+}
+newArray(myArray, yourArray);
