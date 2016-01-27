@@ -30,3 +30,11 @@ function addNumber (number1, number2) {
     return (number1 + number2);
 }
 addNumber(12, 31);
+
+//Write a function that takes two numbers and multiplies them together. 
+// When I try passing something that is not a number, like "12", 12, it still multiplies the numbers together.
+//If I try passing a string with letters, it returns NaN.
+function multiplyNumber (number1, number2) {
+    return (number1 * number2);
+}
+multiplyNumber(12, 12);
