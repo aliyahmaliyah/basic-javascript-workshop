@@ -56,3 +56,15 @@ function someNumbers(number1, number2, string) {
         }
 }
 someNumbers(5, 10, "subtract");
+
+//Write a function that takes a string and a number, and returns the 
+//string repeated that many number of times.
+function stringRepeat(string, number) {
+    var newString = "";
+    for (var i=0; i< number; i++) {
+        newString += string 
+    }
+    return newString;
+}
+
+stringRepeat("Linguini loves avocados!", 3);
