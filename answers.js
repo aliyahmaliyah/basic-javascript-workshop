@@ -38,3 +38,21 @@ function multiplyNumber (number1, number2) {
     return (number1 * number2);
 }
 multiplyNumber(12, 12);
+
+//Write a function that takes two numbers and a string. If the string is ‘add’, 
+//then return the sum of the numbers. If the string is ‘subtract’, return the difference. 
+//If the string is ‘mult’, return the product. If the string is ‘div’, return the ratio. Otherwise return 0.
+function someNumbers(number1, number2, string) {
+    if (string === "add") {
+        return (number1 + number2);
+    } else if (string === "subtract") {
+        return (number1 - number2); 
+    }  else if (string === "mult") {
+        return (number1 * number2); 
+    } else if (string === "div") {
+        return (number1 / number2); 
+    } else {
+        return (0);
+        }
+}
+someNumbers(5, 10, "subtract");
