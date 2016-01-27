@@ -24,6 +24,8 @@ function letterIndex(number, string) {
 letterIndex (4, "Linguini likes avocados!");
 
 //Write a function that takes two numbers and adds them together. 
+//When I try passing something that is not a number, like "12", 31, it treats 
+//them like strings and combines the strings to make "1231"
 function addNumber (number1, number2) {
     return (number1 + number2);
 }
