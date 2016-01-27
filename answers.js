@@ -128,3 +128,18 @@ function bigNumber(myArray) {
             return largest;
 }
 bigNumber(myArray);
+
+//Write a function that takes an array, and returns a filtered array. 
+//The filtered array should only contain the truthy values from the initial array.
+function findTruthy(array) {
+    var truthy = [];
+    for (var i = 0; i < array.length; i++) {
+        if (array[i]) {
+            truthy.push(array[i]);
+        }
+    }
+    return truthy;
+}
+var myArray = [0,"0","happy",-14,9];
+findTruthy(myArray);
+
