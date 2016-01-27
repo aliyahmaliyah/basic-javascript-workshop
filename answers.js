@@ -15,3 +15,10 @@ function lastLetter(string) {
 lastLetter("I like coffee.");
 lastLetter("");
 lastLetter("Linguini likes avocados!");
+
+//Write a function that takes a string and a number, and returns the character 
+//at the position represented by the number. The indexing of number should start at 0. 
+function letterIndex(number, string) {
+    return (string.charAt(number-1))
+}
+letterIndex (4, "Linguini likes avocados!")
