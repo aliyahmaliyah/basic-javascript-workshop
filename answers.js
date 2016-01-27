@@ -74,3 +74,13 @@ function bkwdString(string) {
     return string.split("").reverse().join("");
 }
 bkwdString("aliyah");
+
+//Write a function that takes a number and returns the factorial of a number.
+function factorial(number) {
+    var j = 1;
+    for (var i=1; i <= number; i++) {
+        j=j*i;
+    }
+    return j;
+}
+factorial(5);
