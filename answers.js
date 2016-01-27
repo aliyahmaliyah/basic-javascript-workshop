@@ -100,3 +100,17 @@ function longestWord(string) {
     return word;
 }
 longestWord("Linguini loves avocados");
+
+//Write a function that takes a phrase, and returns the same phrase with every word capitalized. 
+//For example, if you pass your function "hello world", it should return “Hello World” and if 
+//you pass it “HELLO WORLD” or even "HeLLo WoRLD", it will also return "Hello World".
+function capitalize(string) {
+    var result = [];
+    var arr = string.split(" ");
+    for (var i=0; i < arr.length; i++){
+        var newWord= arr[i].charAt(0).toUpperCase()+arr[i].slice(1).toLowerCase();
+        result.push(newWord);
+}
+    return result.join(" ");
+}
+capitalize("hEllo wOrld");
