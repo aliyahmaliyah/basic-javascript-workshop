@@ -173,3 +173,19 @@ function newArray(array1, array2) {
     return combined;
 }
 newArray(myArray, yourArray);
+
+//Mini Challenge: write a function that takes an array and a function as arguments. 
+//The function should return a new array that maps every element of the input array
+//by passing it through the function you received.
+
+function arrayMap(array, fn) {
+    var myArray = [];  
+    for (var i = 0; i < array.length; i++) {
+        myArray.push(fn(array[i]));
+    }
+    return myArray;
+}
+function add1(n){
+    return n+1;
+}
+console.log(arrayMap([1,2,3,4,5], add1));
